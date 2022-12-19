@@ -1,0 +1,88 @@
+html, body {
+    /*height: 100%;*/
+    min-height: 100vh;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.addTodo {
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    gap:10px;
+}
+.addTodo button {
+    background: #057a0b;
+    border:none;
+    outline: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.addTodo input {
+    background:none;
+    border:none;
+    padding: 5px;
+    outline: none;
+    width: 300px;
+}
+
+ul {
+    padding: 10px;
+    width: 430px;
+    margin: 15px 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+ul li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+
+ul li span.delete {
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    border:1px solid #730c0c;
+    background: #ad2929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+ul li input:checked + span {
+    text-decoration: line-through;
+}
+
+ul li span.title {
+    font-size: 18px;
+}
+
