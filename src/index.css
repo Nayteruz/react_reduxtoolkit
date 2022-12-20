@@ -86,3 +86,25 @@ ul li span.title {
     font-size: 18px;
 }
 
+.spinner {
+    width: 46px;
+    height: 46px;
+    border:5px solid #f00;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: round .4s linear infinite;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin:-23px 0 0 -23px;
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
